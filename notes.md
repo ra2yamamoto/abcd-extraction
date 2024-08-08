@@ -1,34 +1,16 @@
+### In order to extract and clean:
+
+- Make desired changes to specifications in specifications folder
+- Place the folder containing all the abcd data in this directory
+- Run condense_files_from_folder.py
+- Run main_extraction.ipynb (fix file names as necessary)
+- Run main_cleaning.ipynb (fix file names as necessary)
+
 ### Missing columns
 "rsfmri_c_ngd_stnvols": "rsfmri_frames_fd",
 "rsfmri_c_ngd_stcontignvols": "rsfmri_frames_fg_contig"
 
-### TODO
-1. Incorporate the new variables from Shuquan and other places
-  Get from doc, should be pretty easy
-2. Stratify ALEs
-  PROBLEM: ALEs aren't stable across time points
-  QUESTION:
-    I can't tell whether or not ALEs are cumulative. You would expect the responses to be cumulative based off of the questions, but sometimes people respond with fewer ALEs from one time point to the next. Should I just take the max? That seems the safest, but may undercount responses. I could also just take data from the latest time point, but that also wouldn't take all ALEs into account. 
-  or, just collapse across time points
-    i.e. calculate percentiles including all time points
-    and stratify people at each time point according to that
-    in that case, some people may end up in one group at one time point, but another in another time point
-    based on the percentiles generated using aggregate data from all time points
-    but that may skew things, since there's also within person variation
-
-stratify 
-bad_life_events
-b_lifeevents_ss_k
-  take the max?
-
-if([ple_died_fu_y] = '2',1,0) plus if([ple_injured_fu_y] = '2',1,0) plus if([ple_crime_fu_y]= '2',1,0) plus if([ple_friend_fu_y]= '2',1,0) plus if([ple_friend_injur_fu_y]= '2',1,0) plus if([ple_financial_fu_y]= '2',1,0) plus if([ple_sud_fu_y]= '2',1,0) plus if([ple_ill_fu_y]= '2',1,0) plus if([ple_injur_fu_y]= '2',1,0) plus if([ple_argue_fu_y]= '2',1,0) plus if([ple_job_fu_y]= '2',1,0) plus if([ple_away_fu_y] = '2',1,0) plus if([ple_arrest_fu_y]= '2',1,0) plus if([ple_friend_died_fu_y]= '2',1,0) plus if([ple_mh_fu_y]= '2',1,0) plus if([ple_sib_fu_y]= '2',1,0) plus if([ple_victim_fu_y]= '2',1,0) plus if([ple_separ_fu_y]= '2',1,0) plus if([ple_law_fu_y]= '2',1,0) plus if([ple_school_fu_y]= '2',1,0) plus if([ple_move_fu_y]= '2',1,0) plus if([ple_jail_fu_y]= '2',1,0) plus if([ple_step_fu_y]= '2',1,0) plus if([ple_new_job_fu_y]= '2',1,0) plus if([ple_new_sib_fu_y] = '2',1,0)
-
 ### New Vars
-
-ALEs: 
-Anything else? 
-
-Clark:
 
 KSADS: (DSM Diagnosis) 
 (ksads_10_869_t ; GAD_present) (ksads_11_917_t ; OCD_present)
@@ -177,3 +159,24 @@ fam_enviro5_p (family_criticize_each_other_often_p)
 fam_enviro6_p (family_hit_each_other_p)
 fam_enviro8_p (family_outdo_each_other_often_p)
 fam_enviro9r_p (family_believe_not_raise_voice_p)
+
+extraction code problem
+  for a single individual, we only have them in three time points
+  the rest we have for all 5 time points
+
+imputation?
+
+if there's no data for a time point for a subject, they aren't in that time point
+
+parent_education",
+"demo_comb_income_v2": "parent_income",
+"demo_prnt_age_v2": "parent_age",
+"demo_fam_exp1_v2": "struggle_food_expenses",
+"demo_prnt_gender_id_v2": "sex_P",
+"demo_sex_v2": "sex",
+"demo_fam_exp2_v2": "couldnt_afford_phone",
+"demo_fam_exp3_v2": "couldnt_afford_rent_mortgage",
+"demo_fam_exp4_v2": "evicted",
+"demo_fam_exp5_v2": "gas_electric_oil_turned_off",
+"demo_fam_exp6_v2": "needed_doc_didnt_go",
+"demo_fam_exp7_v2": "needed_dentist_didnt_go"

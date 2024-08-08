@@ -396,7 +396,8 @@
             "filename": "led_l_adi.csv",
             "nonnumericcols": [],
             "cols": {
-                "reshist_addr1_adi_wsum": "area_deprivation_idx"
+                "reshist_addr1_adi_wsum": "area_deprivation_idx",
+                "reshist_addr1_adi_perc": "area_deprivation_idx_perc"
             }
         },
         {
@@ -587,7 +588,9 @@
                 "ksads_1_843_p": "parent_dysthymia_B_p",
                 "ksads_8_863_p": "parent_social_anxiety_disorder_B_p",
                 "ksads_22_969_p": "parent_sleep_problem_B_p",
-                "ksads_13_935_p": "parent_bulimia_B_p"
+                "ksads_13_935_p": "parent_bulimia_B_p",
+                "ksads_1_842_p": "MDD_past_parent",
+                "ksads_10_870_p": "GAD_Past_Parent"
             }
         },
         {
@@ -1040,6 +1043,13 @@
                 "ders_upset_out_control_p": "child_upset_out_control_p",
                 "ders_upset_time_p": "child_upset_longtime_p",
                 "ders_upset_weak_p": "child_upset_weak_p"
+            }
+        },
+        {
+            "filename": "nc_y_bird.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "bird_scr_score": "bird_task_score"
             }
         }
     ]
