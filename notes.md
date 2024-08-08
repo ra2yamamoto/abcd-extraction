@@ -180,3 +180,153 @@ parent_education",
 "demo_fam_exp5_v2": "gas_electric_oil_turned_off",
 "demo_fam_exp6_v2": "needed_doc_didnt_go",
 "demo_fam_exp7_v2": "needed_dentist_didnt_go"
+
+sample test variables:
+
+depress_D_p ~ 
+adhd_D_p + 
+prosocial_ss_k + 
+tb_fluid + 
+tb_cryst + 
+female_puberty + 
+male_puberty + 
+weight + 
+chronotype + 
+wakesleepcalc + 
+sleep_problems_p + 
+area_deprivation_idx
+screentime_weekday_ss_k + 
+socialmedia_hoursperday_k + 
+bdefs_impulsive_action_p + 
+up_negative_urgency_ss_k + 
+up_lackofplanning_ss_k + 
+up_sensationseeking_ss_k + 
+up_positiveurgency_ss_k + 
+up_lackperseverance_ss_k + 
+child_selfaware_p + 
+child_clear_feelings_p + 
+child_emotion_overwhelm_p + 
+child_feelings_attentive_p + 
+child_feelings_care_p + 
+child_feelings_know_p + 
+child_upset_acknowledge_p + 
+child_upset_angry_p + 
+child_upset_ashamed_p + 
+child_upset_control_p + 
+child_upset_bad_behavior_p + 
+child_upset_better_p + 
+child_upset_poor_concentrate_p + 
+child_upset_no_control_p + 
+child_upset_depressed_p + 
+child_upset_unproductive_p + 
+child_upset_embarrassed_p + 
+child_upset_emotions_overwhelm_p + 
+child_upset_bad_esteem_p + 
+child_upset_nothing_better_p + 
+child_upset_fixation_p + 
+child_upset_bad_focus_p + 
+child_upset_guilty_p + 
+child_upset_irritated_p + 
+child_upset_longtime_better_p + 
+child_upset_lose_control_p + 
+child_upset_out_control_p + 
+child_upset_longtime_p + 
+child_upset_weak_p + 
+family_anger_rare_p + 
+family_angry_throw_things_p + 
+family_lose_temper_rare_p + 
+family_criticize_each_other_often_p + 
+family_hit_each_other_p + 
+family_peaceful_p + 
+family_outdo_each_other_often_p + 
+family_believe_not_raise_voice_p + 
+family_organized_p + 
+family_nosports_p + 
+family_feels_togetherness_p + 
+family_activities_together_p + 
+family_rarely_intellectualdiscourse_p + 
+family_frequent_support_p + 
+family_conflict_p + 
+family_not_talk_aboutfeelings_p + 
+family_eclectic_interests_p + 
+family_frequent_TV_p + 
+family_open_discussing_anything_p + 
+family_conflict_ss_p + 
+family_expression_ss_p + 
+family_intellectual_ss_p + 
+family_activities_ss_p + 
+family_organisation_ss_p
+
+c("depress_D_p", 
+"adhd_D_p", 
+"prosocial_ss_k", 
+"tb_fluid", 
+"tb_cryst", 
+"female_puberty", 
+"male_puberty", 
+"weight", 
+"chronotype", 
+"wakesleepcalc", 
+"sleep_problems_p", 
+"area_deprivation_id", 
+"screentime_weekday_ss_k", 
+"socialmedia_hoursperday_k", 
+"bdefs_impulsive_action_p", 
+"up_negative_urgency_ss_k", 
+"up_lackofplanning_ss_k", 
+"up_sensationseeking_ss_k", 
+"up_positiveurgency_ss_k", 
+"up_lackperseverance_ss_k", 
+"child_selfaware_p", 
+"child_clear_feelings_p", 
+"child_emotion_overwhelm_p", 
+"child_feelings_attentive_p", 
+"child_feelings_care_p", 
+"child_feelings_know_p", 
+"child_upset_acknowledge_p", 
+"child_upset_angry_p", 
+"child_upset_ashamed_p", 
+"child_upset_control_p", 
+"child_upset_bad_behavior_p", 
+"child_upset_better_p", 
+"child_upset_poor_concentrate_p", 
+"child_upset_no_control_p", 
+"child_upset_depressed_p", 
+"child_upset_unproductive_p", 
+"child_upset_embarrassed_p", 
+"child_upset_emotions_overwhelm_p", 
+"child_upset_bad_esteem_p", 
+"child_upset_nothing_better_p", 
+"child_upset_fixation_p", 
+"child_upset_bad_focus_p", 
+"child_upset_guilty_p", 
+"child_upset_irritated_p", 
+"child_upset_longtime_better_p", 
+"child_upset_lose_control_p", 
+"child_upset_out_control_p", 
+"child_upset_longtime_p", 
+"child_upset_weak_p", 
+"family_anger_rare_p", 
+"family_angry_throw_things_p", 
+"family_lose_temper_rare_p", 
+"family_criticize_each_other_often_p", 
+"family_hit_each_other_p", 
+"family_peaceful_p", 
+"family_outdo_each_other_often_p", 
+"family_believe_not_raise_voice_p", 
+"family_organized_p", 
+"family_nosports_p", 
+"family_feels_togetherness_p", 
+"family_activities_together_p", 
+"family_rarely_intellectualdiscourse_p", 
+"family_frequent_support_p", 
+"family_conflict_p", 
+"family_not_talk_aboutfeelings_p", 
+"family_eclectic_interests_p", 
+"family_frequent_TV_p", 
+"family_open_discussing_anything_p", 
+"family_conflict_ss_p", 
+"family_expression_ss_p", 
+"family_intellectual_ss_p", 
+"family_activities_ss_p", 
+"family_organisation_ss_p")

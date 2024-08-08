@@ -12,7 +12,6 @@ def add_interactions(df, lower=15):
 
     return df
 
-
 def depanx_interaction(df, lower, upper):
     col = np.where(df['depress_D_p'] >= np.nanpercentile(df['depress_D_p'], upper),
                    np.where(df['anxdisord_D_p'] <= np.nanpercentile(df['anxdisord_D_p'], lower), 'highdep_lowanx',
