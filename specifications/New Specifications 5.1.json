@@ -149,6 +149,15 @@
     ],
     "DemoSpecs": [
         {
+            "filename": "abcd_p_screen.csv",
+            "nonnumericcols":[],
+            "cols":{
+                "scrn_asd": "asd_diagnosis",
+                "scrn_schiz": "schizophrenia_diagnosis"
+                
+            }
+        },
+        {
             "filename": "gen_y_zygrat.csv",
             "nonnumericcols": [],
             "cols": {
@@ -775,7 +784,9 @@
                 "cbcl_scr_syn_thought_t": "thought_disorder_D_p",
                 "cbcl_scr_syn_rulebreak_t": "rule_breaking_D_p",
                 "cbcl_scr_dsm5_depress_t": "depress_D_p",
+                "cbcl_scr_dsm5_depress_r": "depress_D_p_raw",
                 "cbcl_scr_dsm5_anxdisord_t": "anxdisord_D_p",
+                "cbcl_scr_dsm5_anxdisord_r": "anxdisord_D_p_raw",
                 "cbcl_scr_dsm5_adhd_t": "adhd_D_p",
                 "cbcl_scr_07_ocd_t": "ocd_D_p"
             }

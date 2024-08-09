@@ -235,4 +235,6 @@ fixed_vars = ['sex',
               'caffeine_during_pregnancy_p',
               'premature_birth_p',
               'months_breastfed_p',
-              'firstwords_months_p']
+              'firstwords_months_p',
+              'asd_diagnosis',
+              'schizophrenia_diagnosis']
