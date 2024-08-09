@@ -9,8 +9,21 @@ def add_interactions(df, lower=15):
     df['anxadhd_c'] = anxadhd_interaction(df, lower, upper)
     df['anxocd_c'] = anxocd_interaction(df, lower, upper)
     df['crysflu_c'] = crysflu_interaction(df, lower, upper)
-
+    df.loc[:, 'asd_ssrs_sum'] = df.loc[:, 'avoids_eyecontact_p'] + df.loc[:, 'narrow_interests_p'] + df.loc[:, 'sensory_sensitivity_p'] + df.loc[:,'concentration_on_parts_p'] + df.loc[:, 'face_understanding']
+    df['asdadhd_c'] = asdadhd_interaction(df, lower, upper)
+    
     return df
+
+def asdadhd_interaction(df, lower, upper):
+    col = np.where(df['asd_ssrs_sum'] >= np.nanpercentile(df['asd_ssrs_sum'], upper),
+                   np.where(df['adhd_D_p'] <= np.nanpercentile(df['adhd_D_p'], lower), 'highasd_lowadhd',
+                            np.where(df['adhd_D_p'] >= np.nanpercentile(df['adhd_D_p'], upper),
+                                     'highasd_highadhd', 'other')),
+                   np.where(df['asd_ssrs_sum'] <= np.nanpercentile(df['asd_ssrs_sum'], lower),
+                            np.where(df['adhd_D_p'] >= np.nanpercentile(df['adhd_D_p'], upper), 'lowasd_highadhd',
+                                     np.where(df['adhd_D_p'] <= np.nanpercentile(df['adhd_D_p'], lower),
+                                              'lowasd_lowadhd', 'other')), 'other'))
+    return col
 
 def depanx_interaction(df, lower, upper):
     col = np.where(df['depress_D_p'] >= np.nanpercentile(df['depress_D_p'], upper),
