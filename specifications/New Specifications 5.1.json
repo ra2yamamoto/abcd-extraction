@@ -206,8 +206,8 @@
             "filename": "mh_p_fhx.csv",
             "nonnumericcols": [],
             "cols": {
-                "fhx_3a_p": "#_brothers_p",
-                "fhx_3b_p": "#_sisters_p"
+                "fhx_3a_p": "num_brothers_p",
+                "fhx_3b_p": "num_sisters_p"
             }
         },
         {
@@ -966,8 +966,8 @@
                 "cbcl_q81_p": "steals_home_p",
                 "cbcl_q82_p": "steals_outside_p",
                 "cbcl_q83_p": "hordes_p",
-                "cbcl_q84_p": "strange_ideas_p",
-                "cbcl_q85_p": "strange_behavior_p",
+                "cbcl_q84_p": "strange_behavior_p",
+                "cbcl_q85_p": "strange_ideas_p",
                 "cbcl_q86_p": "stubborn_p",
                 "cbcl_q87_p": "mood_fluctuations_p",
                 "cbcl_q88_p": "sulks_p",

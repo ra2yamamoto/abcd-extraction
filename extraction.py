@@ -8,6 +8,9 @@ output_dir = "output/"
 def extract_cols(filename, period, numeric, rename):
   df = pd.read_csv(f'{data_dir}{filename}', low_memory=False)
 
+  if filename == "abcd_p_screen.csv":
+    df = df.assign(eventname="baseline")
+
   cols = list(rename.keys())
   df = df[['src_subject_id', 'eventname'] + cols].iloc[1:, :]
   df = df.rename(columns={'src_subject_id': 'subject'})
