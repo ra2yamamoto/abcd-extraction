@@ -1,4 +1,4 @@
-# Written in part by GPT
+# Written in part by ChatGPT
 
 import json
 import pandas as pd

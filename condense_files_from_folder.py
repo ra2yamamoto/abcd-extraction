@@ -1,4 +1,4 @@
-# do a recursive search for file names of interest in directory, copy into a single folder
+# do a recursive search for file names of interest in directory, copy into data folder
 
 from pathlib import Path
 import shutil
@@ -6,7 +6,7 @@ import json
 
 def main():
   specs_file = "specifications/New Specifications 5.1.json"
-  main_dir = "abcd-data-release-5.1"
+  main_dir = "abcd-data-release-5.1" # CHANGE THIS DEPENDING ON THE DATA RELEASE
   condensed_dir = "data"
   data = None
 
