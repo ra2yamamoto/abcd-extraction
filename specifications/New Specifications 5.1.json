@@ -778,7 +778,16 @@
                 "rsfmri_c_ngd_vta_ngd_vta": "rsfmri_VAN_intra",
                 "rsfmri_c_ngd_dla_ngd_dla": "rsfmri_DAN_intra",
                 "rsfmri_c_ngd_dt_ngd_fo": "rsfmri_DMN_FPN_inter",
-                "rsfmri_c_ngd_dt_ngd_cgc": "rsfmri_DMN_CON_inter"
+                "rsfmri_c_ngd_dt_ngd_cgc": "rsfmri_DMN_CON_inter",
+                "rsfmri_c_ngd_dla_ngd_fo": "rsfmri_c_ngd_dla_ngd_fo",
+                "rsfmri_c_ngd_dla_ngd_sa": "rsfmri_c_ngd_dla_ngd_sa",
+                "rsfmri_c_ngd_dla_ngd_vta": "rsfmri_c_ngd_dla_ngd_vta",
+                "rsfmri_c_ngd_fo_ngd_sa": "rsfmri_c_ngd_fo_ngd_sa",
+                "rsfmri_c_ngd_fo_ngd_vta": "rsfmri_c_ngd_fo_ngd_vta",
+                "rsfmri_c_ngd_sa_ngd_vta": "rsfmri_c_ngd_sa_ngd_vta",
+                "rsfmri_c_ngd_dt_ngd_dla": "rsfmri_c_ngd_dt_ngd_dla",
+                "rsfmri_c_ngd_dt_ngd_sa": "rsfmri_c_ngd_dt_ngd_sa",
+                "rsfmri_c_ngd_dt_ngd_vta": "rsfmri_c_ngd_dt_ngd_vta"
             }
         },
         {
@@ -799,27 +808,6 @@
                 "rsfmri_cor_ngd_df_scs_thplh": "rsfmri_cor_ngd_df_scs_thplh",
                 "rsfmri_cor_ngd_df_scs_thprh": "rsfmri_cor_ngd_df_scs_thprh",
                 "rsfmri_cor_ngd_df_scs_vtdclh": "rsfmri_cor_ngd_df_scs_vtdclh"
-            }
-        },
-        {
-            "filename": "mri_y_rsfmr_cor_gp_gp.csv",
-            "nonnumericcols": [],
-            "cols": {
-                "rsfmri_c_ngd_dla_ngd_dla": "rsfmri_c_ngd_dla_ngd_dla",
-                "rsfmri_c_ngd_dla_ngd_fo": "rsfmri_c_ngd_dla_ngd_fo",
-                "rsfmri_c_ngd_dla_ngd_sa": "rsfmri_c_ngd_dla_ngd_sa",
-                "rsfmri_c_ngd_dla_ngd_vta": "rsfmri_c_ngd_dla_ngd_vta",
-                "rsfmri_c_ngd_fo_ngd_fo": "rsfmri_c_ngd_fo_ngd_fo",
-                "rsfmri_c_ngd_fo_ngd_sa": "rsfmri_c_ngd_fo_ngd_sa",
-                "rsfmri_c_ngd_fo_ngd_vta": "rsfmri_c_ngd_fo_ngd_vta",
-                "rsfmri_c_ngd_sa_ngd_sa": "rsfmri_c_ngd_sa_ngd_sa",
-                "rsfmri_c_ngd_sa_ngd_vta": "rsfmri_c_ngd_sa_ngd_vta",
-                "rsfmri_c_ngd_vta_ngd_vta": "rsfmri_c_ngd_vta_ngd_vta",
-                "rsfmri_c_ngd_dt_ngd_dt": "rsfmri_c_ngd_dt_ngd_dt",
-                "rsfmri_c_ngd_dt_ngd_dla": "rsfmri_c_ngd_dt_ngd_dla",
-                "rsfmri_c_ngd_dt_ngd_fo": "rsfmri_c_ngd_dt_ngd_fo",
-                "rsfmri_c_ngd_dt_ngd_sa": "rsfmri_c_ngd_dt_ngd_sa",
-                "rsfmri_c_ngd_dt_ngd_vta": "rsfmri_c_ngd_dt_ngd_vta"
             }
         }
     ],
