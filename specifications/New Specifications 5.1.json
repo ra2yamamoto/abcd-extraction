@@ -203,6 +203,91 @@
             }
         },
         {
+            "filename": "led_l_adi.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "reshist_addr1_adi_wsum": "area_deprivation_idx",
+                "reshist_addr1_adi_perc": "area_deprivation_idx_perc"
+                
+            }
+        },
+        {
+            "filename": "led_l_densbld.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "reshist_addr1_d1a": "resid_density"
+            }
+        },
+        {
+            "filename": "led_l_walk.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "reshist_addr1_walkindex": "resid_walkability"
+            }
+        },
+        {
+            "filename": "led_l_roadprox.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "reshist_addr1_proxrd": "resid_prox_roads"
+            }
+        },
+        {
+            "filename": "led_l_crime.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "reshist_addr1_grndtot": "resid_crime_tot",
+                "reshist_addr1_p1vlnt": "resid_crime_violent",
+                "reshist_addr1_drugtot": "resid_crime_drug",
+                "reshist_addr1_dui": "resid_crime_dui"
+            }
+        },
+        {
+            "filename": "led_l_leadrisk.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "reshist_addr1_leadrisk_poverty": "resid_lead_risk_poverty",
+                "reshist_addr1_leadrisk_housing": "resid_lead_risk_houses_perc",
+                "reshist_addr1_leadrisk": "resid_lead_risk"
+            }
+        },
+        {
+            "filename": "led_l_no2.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "reshist_addr1_no2_2016_aavg": "resid_no2_avg"
+            }
+        },
+        {
+            "filename": "led_l_pm25.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "reshist_addr1_pm252016aa": "resid_pm25_avg"
+            }
+        },
+        {
+            "filename": "led_l_biasgender.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "reshist_state_sexism_factor": "resid_sexism",
+                "reshist_state_so_factor": "resid_sex_orient_bias"
+            }
+        },
+        {
+            "filename": "led_l_biasimm.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "reshist_state_immigrant_factor": "resid_immigrant_bias"
+            }
+        },
+        {
+            "filename": "led_l_biasrace.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "reshist_state_racism_factor": "resid_racism"
+            }
+        },
+        {
             "filename": "mh_p_fhx.csv",
             "nonnumericcols": [],
             "cols": {
@@ -399,14 +484,6 @@
             "nonnumericcols": [],
             "cols": {
                 "pnh_ss_protective_scale": "peer_net_protective_ss_k"
-            }
-        },
-        {
-            "filename": "led_l_adi.csv",
-            "nonnumericcols": [],
-            "cols": {
-                "reshist_addr1_adi_wsum": "area_deprivation_idx",
-                "reshist_addr1_adi_perc": "area_deprivation_idx_perc"
             }
         },
         {
@@ -673,11 +750,20 @@
             "filename": "gish_y_sex.csv",
             "nonnumericcols": [],
             "cols": {
-                "kbi_desc_self": "heterosex_y",
-                "kbi_desc_self_2": "gay_bi_y",
-                "kbi_desc_self_3": "sex_orient_y",
+                "kbi_desc_self": "desc_heterosex_y",
+                "kbi_desc_self_2": "desc_gay_bi_y",
+                "kbi_desc_self_3": "desc_sex_orient_y",
+                "kbi_y_sex_orient": "sex_orient_y",
                 "gish2_sexual_attract": "sex_attract_y"
             }
+        },
+        {
+            "filename": "gish_y_gi.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "kbi_y_trans_id": "trans_id_y"
+            }
+
         }
     ],
     "NeuralDataSpecs": [
@@ -693,6 +779,47 @@
                 "rsfmri_c_ngd_dla_ngd_dla": "rsfmri_DAN_intra",
                 "rsfmri_c_ngd_dt_ngd_fo": "rsfmri_DMN_FPN_inter",
                 "rsfmri_c_ngd_dt_ngd_cgc": "rsfmri_DMN_CON_inter"
+            }
+        },
+        {
+            "filename": "mri_y_rsfmr_cor_gp_aseg.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "rsfmri_cor_ngd_df_scs_aalh": "rsfmri_cor_ngd_df_scs_aalh",
+                "rsfmri_cor_ngd_df_scs_aglh": "rsfmri_cor_ngd_df_scs_aglh",
+                "rsfmri_cor_ngd_df_scs_bs": "rsfmri_cor_ngd_df_scs_bs",
+                "rsfmri_cor_ngd_df_scs_cdelh": "rsfmri_cor_ngd_df_scs_cdelh",
+                "rsfmri_cor_ngd_df_scs_cderh": "rsfmri_cor_ngd_df_scs_cderh",
+                "rsfmri_cor_ngd_df_scs_crcxlh": "rsfmri_cor_ngd_df_scs_crcxlh",
+                "rsfmri_cor_ngd_df_scs_crcxrh": "rsfmri_cor_ngd_df_scs_crcxrh",
+                "rsfmri_cor_ngd_df_scs_hplh": "rsfmri_cor_ngd_df_scs_hplh",
+                "rsfmri_cor_ngd_df_scs_pllh": "rsfmri_cor_ngd_df_scs_pllh",
+                "rsfmri_cor_ngd_df_scs_ptlh": "rsfmri_cor_ngd_df_scs_ptlh",
+                "rsfmri_cor_ngd_df_scs_ptrh": "rsfmri_cor_ngd_df_scs_ptrh",
+                "rsfmri_cor_ngd_df_scs_thplh": "rsfmri_cor_ngd_df_scs_thplh",
+                "rsfmri_cor_ngd_df_scs_thprh": "rsfmri_cor_ngd_df_scs_thprh",
+                "rsfmri_cor_ngd_df_scs_vtdclh": "rsfmri_cor_ngd_df_scs_vtdclh"
+            }
+        },
+        {
+            "filename": "mri_y_rsfmr_cor_gp_gp.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "rsfmri_c_ngd_dla_ngd_dla": "rsfmri_c_ngd_dla_ngd_dla",
+                "rsfmri_c_ngd_dla_ngd_fo": "rsfmri_c_ngd_dla_ngd_fo",
+                "rsfmri_c_ngd_dla_ngd_sa": "rsfmri_c_ngd_dla_ngd_sa",
+                "rsfmri_c_ngd_dla_ngd_vta": "rsfmri_c_ngd_dla_ngd_vta",
+                "rsfmri_c_ngd_fo_ngd_fo": "rsfmri_c_ngd_fo_ngd_fo",
+                "rsfmri_c_ngd_fo_ngd_sa": "rsfmri_c_ngd_fo_ngd_sa",
+                "rsfmri_c_ngd_fo_ngd_vta": "rsfmri_c_ngd_fo_ngd_vta",
+                "rsfmri_c_ngd_sa_ngd_sa": "rsfmri_c_ngd_sa_ngd_sa",
+                "rsfmri_c_ngd_sa_ngd_vta": "rsfmri_c_ngd_sa_ngd_vta",
+                "rsfmri_c_ngd_vta_ngd_vta": "rsfmri_c_ngd_vta_ngd_vta",
+                "rsfmri_c_ngd_dt_ngd_dt": "rsfmri_c_ngd_dt_ngd_dt",
+                "rsfmri_c_ngd_dt_ngd_dla": "rsfmri_c_ngd_dt_ngd_dla",
+                "rsfmri_c_ngd_dt_ngd_fo": "rsfmri_c_ngd_dt_ngd_fo",
+                "rsfmri_c_ngd_dt_ngd_sa": "rsfmri_c_ngd_dt_ngd_sa",
+                "rsfmri_c_ngd_dt_ngd_vta": "rsfmri_c_ngd_dt_ngd_vta"
             }
         }
     ],
@@ -1019,6 +1146,15 @@
                 "ksads_ptsd_raw_768_p": "foreign_child_sexually_abuse_victim_p",
                 "ksads_ptsd_raw_769_p": "peer_child_sexually_abuse_victim_p",
                 "ksads_ptsd_raw_770_p": "sudden_death_in_family_p"
+            }
+        },
+        {
+            "filename": "mh_y_ksads_bg.csv",
+            "nonnumericcols": [],
+            "cols": {
+                "kbi_y_grade_repeat": "repeated_grade",
+                "kbi_y_drop_in_grades": "grades_dropped",
+                "kbi_y_det_susp": "school_detension_suspension"
             }
         },
         {
